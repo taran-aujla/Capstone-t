@@ -10,14 +10,7 @@ import Home from "./components/Home";
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <Header />
-      <Home />
-      <h1>f</h1>
-      <Footer />
-    </>
-  );
+  return <></>;
 }
 
 export default App;

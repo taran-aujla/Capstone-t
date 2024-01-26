@@ -5,7 +5,7 @@ function Servehome({ x }) {
   return (
     <>
       <div
-        className={` h-32 w-48   text-lg text-slate-400 rounded-lg shadow-xl shadow-cyan-200 `}
+        className={` h-32 w-48   text-lg text-slate-400 rounded-lg shadow-xl shadow-cyan-200 hover:shadow-yellow-600`}
         style={{ backgroundColor: "#D8B4F8" }}
       >
         {x}

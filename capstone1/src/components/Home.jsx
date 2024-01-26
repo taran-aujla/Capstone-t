@@ -1,5 +1,6 @@
 import React from "react";
 import Servehome from "./Servehome";
+import { Link } from "react-router-dom";
 
 function Home() {
   const Up =
@@ -9,9 +10,12 @@ function Home() {
       style={{ height: "100%" }}
       className=" flex flex-col items-center pt-6 space-y-6 "
     >
-      <div className=" h-48 rounded-xl border-2 border-slate-900  w-11/12 ">
+      <Link
+        to="/"
+        className=" h-48 rounded-xl border-2 border-slate-900  w-11/12 "
+      >
         t
-      </div>
+      </Link>
       <div className=" h-28 mt-5 ">
         <ul className=" h-24 flex flex-row items-center space-x-9 font-bold text-xl">
           <li className=" flex  flex-wrap">
