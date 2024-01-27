@@ -13,9 +13,12 @@ function Home() {
       <Link
         to="/"
         className=" h-48 rounded-xl border-2 border-slate-900  w-11/12 "
-      >
-        t
-      </Link>
+        style={{
+          backgroundImage: `url(
+            'https://source.unsplash.com/random/?Cryptocurrency/'
+          )`,
+        }}
+      ></Link>
       <div className=" h-28 mt-5 ">
         <ul className=" h-24 flex flex-row items-center space-x-9 font-bold text-xl">
           <li className=" flex  flex-wrap">
@@ -52,19 +55,16 @@ function Home() {
 
         <div className="flex flex-row   w-1/2 flex-wrap mt-20 space ">
           <div className="m-7">
-            <Servehome />
+            <Servehome x="Traffic" />
           </div>
           <div className="m-7">
-            <Servehome />
+            <Servehome x="Land Registory" />
           </div>
           <div className="m-7">
-            <Servehome />
+            <Servehome x="Voting" />
           </div>
           <div className="m-7">
-            <Servehome />
-          </div>
-          <div className="m-7">
-            <Servehome />
+            <Servehome x="Corruption report" />
           </div>
         </div>
       </div>

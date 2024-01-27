@@ -35,6 +35,9 @@ function About() {
             className=" w-1/3  bg-slate-700 rounded-full flex justify-center items-center "
             style={{
               height: "100%",
+              backgroundImage: `url(
+                'https://source.unsplash.com/random/?Cryptocurrency/'
+              )`,
             }}
           >
             img
@@ -49,10 +52,34 @@ function About() {
           About team
         </div>
         <div
-          className="h-4/5 bg-slate-300 w-full rounded-b-3xl"
+          className="h-4/5 bg-slate-300 w-full rounded-b-3xl flex flex-col justify-center items-center "
           style={{ backgroundColor: "#D8B4F8" }}
         >
-          us
+          <ul className="flex flex-row space-x-20 font-bold">
+            <li>Name</li>
+            <li>Batch</li>
+            <li>contribution</li>
+          </ul>
+          <ul className="flex flex-row space-x-20">
+            <li>Taranjot Singh</li>
+            <li>3NC8</li>
+            <li>Webdevloper</li>
+          </ul>
+          <ul className="flex flex-row space-x-20">
+            <li>Vishav Singla</li>
+            <li>3NC8</li>
+            <li>Machine Learning</li>
+          </ul>
+          <ul className="flex flex-row space-x-20">
+            <li>Yuvraj Singh</li>
+            <li>3NC8</li>
+            <li>Appdev</li>
+          </ul>
+          <ul className="flex flex-row space-x-20">
+            <li>Mayank Aggarwal</li>
+            <li>COE</li>
+            <li>Machine Learning</li>
+          </ul>
         </div>
       </div>
     </div>
