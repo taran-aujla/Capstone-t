@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Header() {
   const Basic =
-    "h-5/6   w-1/6 rounded-xl flex items-center justify-center hover:font-extrabold hover:shadow hover:text-2xl ";
+    "h-5/6   w-1/6 rounded-xl flex items-center justify-center hover:font-extrabold hover:shadow ";
   return (
     <header className=" h-12 rounded-xl  font-bold ">
       <nav className=" flex flex-row items-center  rounded-xl h-full ">
@@ -31,14 +31,17 @@ function Header() {
             </NavLink>
           </ul>
         </div>
-        <div className="w-1/4  flex flex-row items-center justify-center rounded-xl h-full">
+        <NavLink
+          to={"login"}
+          className="w-1/4  flex flex-row items-center justify-center rounded-xl h-full"
+        >
           <a
             className="h-5/6  w-1/3 rounded-xl flex items-center justify-center hover:font-extrabold hover:shadow hover:text-2xl"
             style={{ backgroundColor: "#FFC7EA" }}
           >
             Login
           </a>
-        </div>
+        </NavLink>
       </nav>
     </header>
   );
