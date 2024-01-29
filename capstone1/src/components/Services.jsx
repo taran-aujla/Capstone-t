@@ -9,8 +9,8 @@ function Services() {
       className=" flex flex-col items-center pt-6 space-y-6 "
     >
       <div
-        className="bg-slate-500  m-10 rounded-3xl"
-        style={{ backgroundColor: "#FFC7EA" }}
+        className="bg-slate-500  m-10 rounded-lg text-gray-900"
+        style={{ backgroundColor: "#ffffff" }}
       >
         <ul className=" h-44 flex flex-col justify-center items-center">
           <li className=" font-extrabold text-xl">

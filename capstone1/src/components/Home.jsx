@@ -13,9 +13,9 @@ function Home() {
     >
       <Link
         to="/"
-        className="h-48 rounded-xl border-2 border-slate-900 w-11/12"
+        className="h-48 rounded-xl border-2  w-11/12"
         style={{
-          backgroundImage: `url('https://source.unsplash.com/random/?Cryptocurrency/')`,
+          backgroundImage: `url('https://source.unsplash.com/random/?Sky/')`,
         }}
       ></Link>
       <div className="h-28 mt-5">
