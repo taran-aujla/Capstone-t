@@ -1,5 +1,6 @@
 import React from "react";
 import Servehome from "./Servehome";
+import { Carousell } from "./Carousell";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -11,13 +12,7 @@ function Home() {
       style={{ height: "100%" }}
       className="flex flex-col items-center pt-6 space-y-6"
     >
-      <Link
-        to="/"
-        className="h-48 rounded-xl border-2  w-11/12"
-        style={{
-          backgroundImage: `url('https://source.unsplash.com/random/?Sky/')`,
-        }}
-      ></Link>
+      <Carousell />
       <div className="h-28 mt-5">
         <ul className="h-24 flex flex-row items-center space-x-9 font-bold text-xl">
           <li className="flex flex-wrap">
