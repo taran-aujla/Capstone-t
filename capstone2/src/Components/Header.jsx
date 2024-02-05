@@ -28,6 +28,7 @@ import {
   TagIcon,
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
+import { NavLink, Link } from "react-router-dom";
 
 const navListMenuItems = [
   {
@@ -44,6 +45,7 @@ const navListMenuItems = [
     title: "Services",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
+    ids: "#c",
   },
 
   {
@@ -62,33 +64,40 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
-        <MenuItem className="flex items-center gap-3 rounded-lg">
-          <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
-            {" "}
-            {React.createElement(icon, {
-              strokeWidth: 2,
-              className: "h-6 text-gray-900 w-6",
-            })}
-          </div>
-          <div>
-            <Typography
-              variant="h6"
-              color="blue-gray"
-              className="flex items-center text-sm font-bold"
-            >
-              {title}
-            </Typography>
-            <Typography
-              variant="paragraph"
-              className="text-xs !font-medium text-blue-gray-500"
-            >
-              {description}
-            </Typography>
-          </div>
-        </MenuItem>
-      </a>
+    ({ icon, title, description, ids }, key) => (
+      <button
+        onClick={() => {
+          const sec = document.querySelector(ids || "#");
+          sec?.scrollIntoView({ behavior: "smooth" });
+        }}
+      >
+        <a key={key}>
+          <MenuItem className="flex items-center gap-3 rounded-lg">
+            <div className="flex items-center justify-center rounded-lg !bg-blue-gray-50 p-2 ">
+              {" "}
+              {React.createElement(icon, {
+                strokeWidth: 2,
+                className: "h-6 text-gray-900 w-6",
+              })}
+            </div>
+            <div>
+              <Typography
+                variant="h6"
+                color="blue-gray"
+                className="flex items-center text-sm font-bold"
+              >
+                {title}
+              </Typography>
+              <Typography
+                variant="paragraph"
+                className="text-xs !font-medium text-blue-gray-500"
+              >
+                {description}
+              </Typography>
+            </div>
+          </MenuItem>
+        </a>
+      </button>
     )
   );
 
@@ -140,16 +149,22 @@ function NavListMenu() {
 function NavList() {
   return (
     <List className="mt-4 mb-6 p-0 lg:mt-0 lg:mb-0 lg:flex-row lg:p-1">
-      <Typography
-        as="a"
-        href="#"
-        variant="small"
-        color="blue-gray"
-        className="font-medium"
-      >
-        <ListItem className="flex items-center gap-2 py-2 pr-4">Home</ListItem>
-      </Typography>
-      <NavListMenu />
+      <NavLink to={"/"}>
+        <Typography
+          as="a"
+          href="#"
+          variant="small"
+          color="blue-gray"
+          className="font-medium"
+        >
+          <ListItem className="flex items-center gap-2 py-2 pr-4">
+            Home
+          </ListItem>
+        </Typography>
+      </NavLink>
+      <Link to={"/"}>
+        <NavListMenu />
+      </Link>
       <Typography
         as="a"
         href="#"
@@ -190,14 +205,14 @@ export default function Header() {
           <div className="hidden lg:block">
             <NavList />
           </div>
-          <div className="hidden gap-2 lg:flex">
+          <NavLink to={"/login"} className="hidden gap-2 lg:flex">
             <Button variant="text" size="sm" color="blue-gray">
               Log In
             </Button>
             <Button variant="gradient" size="sm">
               Sign In
             </Button>
-          </div>
+          </NavLink>
           <IconButton
             variant="text"
             color="blue-gray"

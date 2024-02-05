@@ -8,19 +8,12 @@ import Footer from "./Components/Footer";
 
 import { Carousell } from "./Components/Carousell";
 import Services from "./Components/Services";
+import { Updates } from "./Components/Updates";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return (
-    <>
-      <Header />
-      <Carousell />
-      <Services />
-      <h1>wow</h1>
-      <Footer />
-    </>
-  );
+  return <></>;
 }
 
 export default App;

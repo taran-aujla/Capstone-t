@@ -50,24 +50,21 @@ export function Carousell() {
                 color="white"
                 className="mb-4 text-3xl md:text-4xl lg:text-5xl"
               >
-                The Beauty of Nature
+                Digilocker
               </Typography>
               <Typography
                 variant="lead"
                 color="white"
                 className="mb-12 opacity-80"
               >
-                It is not so much for its beauty that the forest makes a claim
-                upon men&apos;s hearts, as for that subtle something, that
-                quality of air that emanation from old trees, that so
-                wonderfully changes and renews a weary spirit.
+                "Digilocker, where the essence of paperless convenience meets
+                the security of a digital vault, unlocking a seamless journey
+                for our documents, where accessibility meets tranquility in the
+                digital landscape."
               </Typography>
-              <div className="flex gap-2">
+              <div className="flex gap-2 ">
                 <Button size="lg" color="white">
-                  Explore
-                </Button>
-                <Button size="lg" color="white" variant="text">
-                  Gallery
+                  <a href="https://www.digilocker.gov.in/">Explore</a>
                 </Button>
               </div>
             </div>
@@ -75,7 +72,7 @@ export function Carousell() {
         </div>
         <div className="relative h-full w-full">
           <img
-            src="https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80"
+            src="https://images.unsplash.com/photo-1495277493816-4c359911b7f1?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="image 3"
             className="h-full w-full object-cover"
           />
@@ -101,9 +98,6 @@ export function Carousell() {
               <div className="flex gap-2">
                 <Button size="lg" color="white">
                   Explore
-                </Button>
-                <Button size="lg" color="white" variant="text">
-                  Gallery
                 </Button>
               </div>
             </div>
