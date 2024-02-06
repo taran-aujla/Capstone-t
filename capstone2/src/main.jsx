@@ -7,6 +7,7 @@ import Layout from "./Layout.jsx";
 import Home from "./Components/Home.jsx";
 import Login from "./Components/Login.jsx";
 import Log from "./Components/Log.jsx";
+import Traffic from "./Components/Traffic.jsx";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/log",
         element: <Log />,
+      },
+      {
+        path: "/traffic",
+        element: <Traffic />,
       },
     ],
   },

@@ -3,14 +3,15 @@ import { Scard } from "./Scard";
 
 function Services() {
   return (
-    <div className=" ">
-      <div id="c" className="top-0">
+    <div className="h-100%">
+      <div id="S" className="top-0">
         -
       </div>
-      <div className="text-3xl mt-20 ">Services ;)</div>
-      <div className="flex flex-wrap p-10 justify-center items-center">
+      <div className="text-3xl pt-20 ">Services ;)</div>
+      <div className="flex flex-wrap p-16 justify-center items-center">
         <Scard
           title="Traffic"
+          path={"/traffic"}
           images="https://source.unsplash.com/Sz1aoOyeIFE/800x600"
         />
         <Scard
@@ -26,7 +27,7 @@ function Services() {
           }
         />
         <Scard
-          title="Land Rregistory"
+          title="Voting"
           images={
             "https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           }

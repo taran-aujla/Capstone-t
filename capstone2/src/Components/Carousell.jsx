@@ -1,6 +1,7 @@
 import { Carousel, Typography, Button } from "@material-tailwind/react";
 
 export function Carousell() {
+  const UpdatesCss = " flex justify-center items-center   opacity-100 ";
   return (
     <div className="h-[550px]">
       <Carousel className="rounded-xl">
@@ -11,13 +12,30 @@ export function Carousell() {
             className="h-full w-full object-cover"
           />
           <div className="absolute inset-0 grid h-full w-full place-items-center bg-black/75">
-            <div className="w-3/4 text-center md:w-2/4">
+            <div className="w-3/4 text-center md:w-2/4 opa">
               <Typography
                 variant="h1"
                 color="white"
-                className="mb-4 text-3xl md:text-4xl lg:text-5xl"
+                className="mb-4 text-3xl md:text-4xl lg:text-5xl flex flex-row"
               >
-                Blockchain Beauty
+                Anti Corrupt
+                <a className="ml-[-10] w-16 ">
+                  <Carousel
+                    prevArrow={false}
+                    nextArrow={false}
+                    navigation={false}
+                    autoplay={true}
+                    autoplayDelay={5000}
+                    transition={{ duration: 2 }}
+                    className="rounded-xl w-full flex flex-row overflow-hidden "
+                    loop={true}
+                  >
+                    <div className={UpdatesCss}>- ō</div>
+                    <div className={UpdatesCss}>🪙</div>
+                    <div className={UpdatesCss}>₿</div>
+                    <div className={UpdatesCss}>🌐</div>
+                  </Carousel>
+                </a>
               </Typography>
               <Typography
                 variant="lead"

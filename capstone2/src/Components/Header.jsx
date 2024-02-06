@@ -45,7 +45,7 @@ const navListMenuItems = [
     title: "Services",
     description: "Learn how we can help you achieve your goals.",
     icon: SunIcon,
-    ids: "#c",
+    ids: "#S",
   },
 
   {
@@ -54,9 +54,10 @@ const navListMenuItems = [
     icon: PhoneIcon,
   },
   {
-    title: "News",
-    description: "Read insightful articles, tips, and expert opinions.",
+    title: "Updates",
+    description: "know about latest updates.",
     icon: NewspaperIcon,
+    ids: "#Up",
   },
 ];
 
@@ -198,9 +199,9 @@ export default function Header() {
             as="a"
             href="#"
             variant="h6"
-            className="mr-4 cursor-pointer py-1.5 lg:ml-2"
+            className="mr-4 cursor-pointer py-1.5 lg:ml-2 font-bold text-lg "
           >
-            Material Tailwind
+            Anti Corrupt-ō
           </Typography>
           <div className="hidden lg:block">
             <NavList />

@@ -6,8 +6,9 @@ import {
   Typography,
   Button,
 } from "@material-tailwind/react";
+import { NavLink, Link } from "react-router-dom";
 
-export function Scard({ title, images }) {
+export function Scard({ title, images, path }) {
   return (
     <div>
       <Card className=" w-96 ml-10 mt-10">
@@ -29,7 +30,9 @@ export function Scard({ title, images }) {
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">
-          <Button>Visit</Button>
+          <Link to={path}>
+            <Button>Visit</Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
